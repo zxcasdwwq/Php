@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-if (isset($_SESSION['steamid'])) {
+if (isset($_POST['Ok'])) {
     // Пользователь уже залогинен
-    echo "Logged in as SteamID: " . $_SESSION['steamid'] . "<br>";
+    echo "Logged in as SteamID: " . $_POST['Ok'] . "<br>";
     echo '<a href="logout.php">Выйти</a>';
 } else {
     // Пользователь не залогинен
