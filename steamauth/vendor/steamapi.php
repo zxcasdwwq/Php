@@ -40,7 +40,7 @@ try {
             $ptn = "/^http:\/\/steamcommunity\.com\/openid\/id\/(7[0-9]{15,25}+)$/";
             preg_match($ptn, $id, $matches);
 
-            // Получаем ыSteamID64
+            // Получаем ыSteamID64в
             $steamID64 = $matches[1];
 
             // Сохраняем SteamID в сессии
