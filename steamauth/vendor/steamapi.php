@@ -7,11 +7,7 @@ require 'openid.php';
 
 try {
     // Создаем объект LightOpenID.  Замените 'http://yourdomain.com/' на свой домен!
-<<<<<<< HEAD
     $openid = new LightOpenID('http://dota2statistics.ru/');
-=======
-    $openid = new LightOpenID('http://yourdomain.com/');
->>>>>>> bfa277c89e3fc665500fa9498c05d593441fce83
 
     // Если пользователь не аутентифицирован
     if(!$openid->mode) {
@@ -44,11 +40,7 @@ try {
             $ptn = "/^http:\/\/steamcommunity\.com\/openid\/id\/(7[0-9]{15,25}+)$/";
             preg_match($ptn, $id, $matches);
 
-<<<<<<< HEAD
             // Получаем ыSteamID64аss
-=======
-            // Получаем SteamID64
->>>>>>> bfa277c89e3fc665500fa9498c05d593441fce83
             $steamID64 = $matches[1];
 
             // Сохраняем SteamID в сессии
@@ -66,8 +58,4 @@ try {
 } catch(ErrorException $e) {
     echo $e->getMessage();
 }
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> bfa277c89e3fc665500fa9498c05d593441fce83

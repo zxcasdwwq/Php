@@ -5,11 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 session_start();
 
 // Замените на свой URL
-<<<<<<< HEAD
 $redirectUri  = 'http://dota2statistics.ru/steamauth/steam_auth.php'; // Важно: URL должен совпадать с тем, который вы укажете в параметрах OpenID
-=======
-$redirectUri  = 'http://yourdomain.com/steam_auth.php'; // Важно: URL должен совпадать с тем, который вы укажете в параметрах OpenID
->>>>>>> bfa277c89e3fc665500fa9498c05d593441fce83
 
 // Steam OpenID URL
 $steamOpenIdUrl = 'https://steamcommunity.com/openid/login';
